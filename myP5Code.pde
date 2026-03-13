@@ -10,9 +10,17 @@ setup = function() {
 
     fill(0, 255 - i, 0);
     text("⸙", 420-i, 390);
-  }  
+  };
 
-  
+var cuteAnimals = [ "Bunnies!", "Red Pandas", "Ragdoll Cats"];
+fill(10, 255, 0);
+
+var animalNum = 0;
+while(animalNum < cuteAnimals.length) {
+  text(cuteAnimals[animalNum], 10, 30+animalNum*30);
+  animalNum++;
+};
+
 };
 
 
